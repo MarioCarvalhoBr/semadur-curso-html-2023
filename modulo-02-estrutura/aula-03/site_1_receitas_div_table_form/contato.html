@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Minhas Receitas</title>
+        <style>
+            header {
+                text-align: center;
+                background-color: DarkSalmon;
+                color: white;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                width: 100%;
+                height: 35px;
+            }  
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                
+                background-color: rgb(229, 30, 30);
+              }
+              
+              li {
+                float: left;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+                border-right:1px solid #ffffff;
+                /*setar negrito para o item ativo*/
+                font-weight: bold;
+
+              }
+              
+              li:last-child {
+                border-right: none;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #111;
+              }
+              
+              .active {
+                background-color: #fff200;
+              }
+
+
+
+                section {
+                    text-align: justify;
+                    top: 100px;
+                    width: 100%;
+                    padding-top: 5px;
+    
+                }
+                article {
+                    background-color: red;
+                    width: 300px;
+                    height: 80%;
+                    margin: 0 auto;
+                    margin-top: 1px;
+                    margin-bottom: 1px;
+                    padding: 10px;
+                    float: left;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    border-radius: 10px;
+                    /*Box shadow*/
+                    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .button {
+                    background-color: #04AA6D; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                  }
+                  
+                  .button2 {background-color: #008CBA;} /* Blue */
+                  .button3 {background-color: #f44336;} /* Red */ 
+                  .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+                  .button5 {background-color: #555555;} /* Black */
+
+
+                  .footer {
+                   
+                    width: 100%;
+                    background-color: red;
+                    color: white;
+                    text-align: center;
+                  }
+
+                  #tabela_nutricional {
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                  }
+                  
+                  #tabela_nutricional td, #tabela_nutricional th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                  }
+                  
+                  #tabela_nutricional tr:nth-child(even){background-color: #f2f2f2;}
+                  
+                  #tabela_nutricional tr:hover {background-color: #ddd;}
+                  
+                  #tabela_nutricional th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: red;
+                    color: white;
+                  }
+
+
+                  body {
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                  
+                  * {
+                    box-sizing: border-box;
+                  }
+                  
+                  /* Style inputs */
+                  input[type=text], select, textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                  }
+                  
+                  input[type=submit] {
+                    background-color: #04AA6D;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    cursor: pointer;
+                  }
+                  
+                  input[type=submit]:hover {
+                    background-color: #45a049;
+                  }
+                  
+                  /* Style the container/contact section */
+                  .container {
+                    border-radius: 5px;
+                    background-color: #f2f2f2;
+                    padding: 10px;
+                  }
+                  
+                  /* Create two columns that float next to eachother */
+                  .column {
+                    float: left;
+                    width: 50%;
+                    margin-top: 6px;
+                    padding: 20px;
+                  }
+                  
+                  /* Clear floats after the columns */
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                  
+                  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                  @media screen and (max-width: 600px) {
+                    .column, input[type=submit] {
+                      width: 100%;
+                      margin-top: 0;
+                    }
+                  }
+
+  
+                  
+        </style>
+    </head>
+    <body>
+        <body>
+            <header style="background-color: red;">
+                <h2>Minhas Receitas
+                </h2>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Receitas</a></li>
+                    <li><a  href="nutri.html">Tabela Natricional</a></li>
+                    <li><a class="active" href="contato.html">Contato</a></li>
+                    <li style="float:right"><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <main>
+
+                <div class="container">
+                    <div style="text-align:center">
+                      <h2>Formulário de Contato</h2>
+                      <p>Tire suas dúvidas, envie suas sugestões ou críticas.</p>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="imagens/mesa.jpg" style="width:100%">
+                      </div>
+                      <div class="column">
+                        <form>
+                          <label for="fname">Primeiro Nome</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                          <label for="lname">Último Nome</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Seu último nome..">
+                          <label for="country">País</label>
+                          <select id="country" name="country">
+                            <option value="australia">Brasil</option>
+                            <option value="canada">Canadá</option>
+                            <option value="usa">USA</option>
+                          </select>
+                          <label for="subject">Mensagem</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <button class="button button2" onclick="alert('Informações foram enviadas com sucesso!')">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- aside>
+                        <h3>Propaganda</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo. Explicabo iusto harum dignissimos. Eaque laboriosam accusamus eligendi veniam a quae. Iste laborum suscipit delectus doloremque quia eaque dignissimos voluptatibus.
+                            Voluptatum incidunt vel beatae nobis ab ullam nemo sed ut accusamus ipsa
+                        </p>
+                    </!-aside -->
+
+
+
+                    <div class="footer">
+                        <p>Minhas Receitas &copy; 2023. Todos os direitos reservados.
+                            <br>
+                            Desenvolvido por: <a
+                                href="https://www.linkedin.com/in/mariodearaujocarvalho/">Mário
+                                de Araújo Carvalho</a></p>
+                      </div>
+            
+            </main>
+        </body>
+
+    </body>
+</html>

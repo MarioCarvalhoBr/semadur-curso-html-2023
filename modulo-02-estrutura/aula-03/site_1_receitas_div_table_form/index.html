@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Minhas Receitas</title>
+        <style>
+            header {
+                text-align: center;
+                background-color: DarkSalmon;
+                color: white;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                width: 100%;
+                height: 35px;
+            }  
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                
+                background-color: rgb(229, 30, 30);
+              }
+              
+              li {
+                float: left;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+                border-right:1px solid #ffffff;
+                /*setar negrito para o item ativo*/
+                font-weight: bold;
+
+              }
+              
+              li:last-child {
+                border-right: none;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #111;
+              }
+              
+              .active {
+                background-color: #fff200;
+              }
+
+
+
+                section {
+                    text-align: justify;
+                    top: 100px;
+                    width: 100%;
+                    padding-top: 5px;
+    
+                }
+                article {
+                    background-color: red;
+                    width: 300px;
+                    height: 80%;
+                    margin: 0 auto;
+                    margin-top: 1px;
+                    margin-bottom: 1px;
+                    padding: 10px;
+                    float: left;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    border-radius: 10px;
+                    /*Box shadow*/
+                    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .button {
+                    background-color: #04AA6D; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                  }
+                  
+                  .button2 {background-color: #008CBA;} /* Blue */
+                  .button3 {background-color: #f44336;} /* Red */ 
+                  .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+                  .button5 {background-color: #555555;} /* Black */
+
+
+                  .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: red;
+                    color: white;
+                    text-align: center;
+                  }
+                  
+        </style>
+    </head>
+    <body>
+        <body>
+            <header style="background-color: red;">
+                <h2>Minhas Receitas
+                    <input type="text"
+                        placeholder="Digite o nome de uma receita">
+                    <button>Pesquisar</button>
+                </h2>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Receitas</a></li>
+                    <li><a href="nutri.html">Tabela Natricional</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li style="float:right"><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <main>
+
+                <section>
+                    <article>
+                        <h3>Receita 1</h3>
+                        <img src="imagens/image_1_brigadeiro.jpg"
+                            alt="Brigadeiro">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem, explicabo. Explicabo iusto harum
+                            dignissimos. Eaque laboriosam accusamus eligendi
+                            veniam a quae. Iste laborum suscipit delectus
+                            doloremque quia eaque dignissimos voluptatibus.
+                        </p>
+                        <button class="button button4">Abrir receita</button>
+                        <button class="button button2">Compartilhar</button>
+
+                    </article>
+
+                    <article>
+                        <h3>Receita 2</h3>
+                        <img src="imagens/image_2_bolo_de_cenoura.jpeg"
+                            alt="Brigadeiro">
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem, explicabo. Explicabo iusto harum
+                            dignissimos. Eaque laboriosam accusamus eligendi
+                            veniam a quae. Iste laborum suscipit delectus
+                            doloremque quia eaque dignissimos voluptatibus.
+                        </p>
+
+                        <button class="button button4">Abrir receita</button>
+                        <button class="button button2">Compartilhar</button>
+                    </article>
+
+                    <article>
+                        <h3>Receita 3</h3>
+                        <img src="imagens/image_3_chocolate.jpg"
+                            alt="Brigadeiro">
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem, explicabo. Explicabo iusto harum
+                            dignissimos. Eaque laboriosam accusamus eligendi
+                            veniam a quae. Iste laborum suscipit delectus
+                            doloremque quia eaque dignissimos voluptatibus.
+                        </p>
+
+                        <button class="button button4">Abrir receita</button>
+                        <button class="button button2">Compartilhar</button>
+                    </article>
+                    <article>
+                        <h3>Receita 4</h3>
+                        <img src="imagens/image_2_bolo_de_cenoura.jpeg"
+                            alt="Brigadeiro">
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem, explicabo. Explicabo iusto harum
+                            dignissimos. Eaque laboriosam accusamus eligendi
+                            veniam a quae. Iste laborum suscipit delectus
+                            doloremque quia eaque dignissimos voluptatibus.
+                        </p>
+
+                        <button class="button button4">Abrir receita</button>
+                        <button class="button button2">Compartilhar</button>
+                    </article>
+                </section>
+
+                <!-- aside>
+                        <h3>Propaganda</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo. Explicabo iusto harum dignissimos. Eaque laboriosam accusamus eligendi veniam a quae. Iste laborum suscipit delectus doloremque quia eaque dignissimos voluptatibus.
+                            Voluptatum incidunt vel beatae nobis ab ullam nemo sed ut accusamus ipsa
+                        </p>
+                    </!-aside -->
+
+
+
+                    <div class="footer">
+                        <p>Minhas Receitas &copy; 2023. Todos os direitos reservados.
+                            <br>
+                            Desenvolvido por: <a
+                                href="https://www.linkedin.com/in/mariodearaujocarvalho/">Mário
+                                de Araújo Carvalho</a></p>
+                      </div>
+            
+            </main>
+        </body>
+
+    </body>
+</html>

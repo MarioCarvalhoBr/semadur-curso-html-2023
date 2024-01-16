@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Receitas</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Título da página h1</h1>
+    <hr>
+    <h2>Título da página h2</h2>
+    <h3>Título da página h3</h3>
+    <h4>Título da página h4</h4>
+    <h5>Título da página h5</h5>
+    <h6>Título da página h6</h6>
+
+    <p justify>
+        Parágrafo 1
+        <br>
+
+        Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Natus voluptate est voluptatum enim autem! Nobis dignissimos sint eum sed animi tempore aspernatur corrupti ratione, saepe optio, soluta qui. Magnam, quaerat!
+        Sapiente, expedita nulla tempore fugiat modi hic pariatur? Rem dolorem a hic nisi est maiores possimus mollitia, soluta architecto recusandae amet molestiae quos molestias. A perferendis qui provident fugiat unde.
+        Voluptatibus, pariatur dolore quam, vero a, incidunt corporis ullam maxime quis rerum aliquam animi. Eius autem amet suscipit in, vero debitis sapiente, iusto praesentium facilis reiciendis quia soluta nemo tenetur.
+        Autem sequi asperiores corporis quis voluptatem, magni natus nemo minus. Sit qui cum reprehenderit, pariatur ex nisi molestias hic eos culpa odit repudiandae consectetur nulla voluptatem dolorum. Quas, optio sequi!
+        Praesentium reprehenderit fuga aliquam sint temporibus error commodi sunt tempore nesciunt aspernatur! Laudantium inventore placeat perferendis distinctio, minus debitis numquam tempore sapiente et praesentium vitae eligendi voluptatum dolore, odio libero?
+    </p>
+    
+</body>
+</html>
