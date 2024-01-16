@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de áudio 1</title>
+    <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- estrutura de elementos semânticos: header, nav, main, section, article, footer-->
+    <header>
+        <h1>Exemplo de áudio 1</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Áudio 1</a></li>
+            <li><a href="index2.html">Áudio 2</a></li>
+            <li><a href="index3.html">Áudio 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Áudio melódico</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi quia, est aspernatur vero eos totam! Suscipit quod tempore cupiditate itaque, voluptatem dolorem numquam voluptatibus aliquam ab reprehenderit eveniet non!
+               
+                    <hr>
+                <audio controls>
+                    <source src="audios/melodic.wav" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Mário Carvalho</p>
+    </footer>
+    
+</body>
+</html>

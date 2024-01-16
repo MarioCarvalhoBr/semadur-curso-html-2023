@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de áudio 1</title>
+    <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            background-color: rgb(33, 80, 167);
+            color: white;    
+            padding: 30px;
+            text-align: center;  
+        }
+        
+        .conteudo{
+            background-color: rgb(147, 163, 193);
+            color: white;  
+            flex: 1 0 auto; 
+            margin-top: 10px;  
+            margin-bottom: 20px; 
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .rodape{
+            background-color: rgb(33, 80, 167);
+            color: white; 
+            flex-shrink: 0;
+        }
+        h2{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Meu Streming de Músicas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Áudio WAV</a></li>
+            
+            <li><a href="index2.html">Áudio MP3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="conteudo">
+            <article>
+                <h2>Áudio melódico WAV</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi quia, est aspernatur vero eos totam! Suscipit quod tempore cupiditate itaque, voluptatem dolorem numquam voluptatibus aliquam ab reprehenderit eveniet non!
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium laboriosam consequuntur rem iusto corporis facilis pariatur, veritatis ea tempore reiciendis commodi quos aspernatur! Ab ex ullam facere minima asperiores.
+                Deserunt perferendis culpa laboriosam maxime, assumenda sequi maiores explicabo reiciendis dolorem nesciunt mollitia dolor recusandae officia repellendus dolores impedit doloremque! Iure ad atque repellat similique perferendis dignissimos nihil soluta maiores?
+                Consequuntur reiciendis voluptatibus, nulla quas officiis quisquam expedita deleniti labore a beatae soluta dolores minus repellat consectetur. Optio, quo maxime. Obcaecati ipsa architecto eaque harum. Exercitationem qui culpa doloremque ullam.
+                </p>
+                    <hr>
+                <audio controls>
+                    <source src="audios/melodic.wav" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Mário Carvalho</p>
+    </footer>
+    
+</body>
+</html>

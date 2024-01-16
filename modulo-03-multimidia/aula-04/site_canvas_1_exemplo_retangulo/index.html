@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de canvas</title>
+    <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            background-color: rgb(33, 80, 167);
+            color: white;    
+            padding: 30px;
+            text-align: center;  
+        }
+        
+        .conteudo{
+            background-color: rgb(147, 163, 193);
+            color: white;  
+            flex: 1 0 auto; 
+            margin-top: 10px;  
+            margin-bottom: 20px; 
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .rodape{
+            background-color: rgb(33, 80, 167);
+            color: white; 
+            flex-shrink: 0;
+        }
+        h2{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <main>
+        <canvas id="meuCanvas" width="200" height="200"></canvas>
+    </main>
+
+
+    
+</body>
+<script>
+    var canvas = document.getElementById("meuCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "rgb(255, 0, 0)";
+    ctx.fillRect(10, 10, 100, 100);
+
+    // Escrever "Hello World!" com a cor azul
+    // ctx.fillStyle = "rgb(0, 0, 255)";
+    // ctx.font = "30px Arial";
+    // ctx.fillText("Hello World!", 10, 50);
+
+    // Desenhar um retângulo com borda vermelha
+    ctx.strokeStyle = "rgb(0, 0, 255)";
+    ctx.strokeRect(10, 10, 100, 100);
+
+    // Ao precionar a tecla "Enter" limpa o canvas
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode == 13){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    });
+    // Ao precionar a tecla "esquerda" move o retângulo para a esquerda
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode == 37){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(10, 10, 100, 100);
+        }
+    });
+    // Ao precionar a tecla "direita" move o retângulo para a direita
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode == 39){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(110, 10, 100, 100);
+        }
+    });
+    // Ao precionar a tecla "cima" move o retângulo para cima
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode == 38){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(10, 10, 100, 100);
+        }
+    });
+    // Ao precionar a tecla "baixo" move o retângulo para baixo
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode == 40){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(10, 110, 100, 100);
+        }
+    });
+
+</script>
+</html>

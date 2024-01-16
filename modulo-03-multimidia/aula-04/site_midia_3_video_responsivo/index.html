@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de vídeo 1</title>
+    <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            background-color: rgb(33, 80, 167);
+            color: white;    
+            padding: 30px;
+            text-align: center;  
+        }
+        
+        .conteudo{
+            background-color: rgb(147, 163, 193);
+            color: white;  
+            flex: 1 0 auto; 
+            margin-top: 10px;  
+            margin-bottom: 20px; 
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .rodape{
+            background-color: rgb(33, 80, 167);
+            color: white; 
+            flex-shrink: 0;
+        }
+        h2{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Meu Streming de Vídeos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Vídeo MP4</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section class="conteudo">
+            <article>
+                <h2>Vídeo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi quia, est aspernatur vero eos totam! Suscipit quod tempore cupiditate itaque, voluptatem dolorem numquam voluptatibus aliquam ab reprehenderit eveniet non!
+               
+                <hr>
+                <video controls autoplay loop>
+                    <source src="videos/video_1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML.
+                </video>
+
+            </article>
+
+            <article>
+                <h2>Vídeo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi quia, est aspernatur vero eos totam! Suscipit quod tempore cupiditate itaque, voluptatem dolorem numquam voluptatibus aliquam ab reprehenderit eveniet non!
+               
+                <hr>
+                <video controls>
+                    <source src="videos/video_2.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML.
+                </video>
+
+            </article>
+
+            <article>
+                <h2>Vídeo 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi quia, est aspernatur vero eos totam! Suscipit quod tempore cupiditate itaque, voluptatem dolorem numquam voluptatibus aliquam ab reprehenderit eveniet non!
+               
+                <hr>
+                <video controls >
+                    <source src="videos/video_3.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML.
+                </video>
+
+            </article>
+
+            
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Mário Carvalho</p>
+    </footer>
+    
+</body>
+</html>

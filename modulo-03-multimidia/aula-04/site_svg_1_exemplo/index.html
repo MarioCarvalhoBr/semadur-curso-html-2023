@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo SVG</title>
+</head>
+<body>
+    <svg width="100" height="100">
+        <circle id="meuCirculo" cx="50" cy="50" r="40" fill="blue" />
+    </svg>
+    <hr>
+    <svg width="200" height="100">
+        <rect x="10" y="10" width="30" height="30" fill="blue" />
+        <circle cx="60" cy="50" r="20" fill="red" />
+        <!-- Adicionar texto Hello World-->
+        <text x="0" y="100" fill="black">Hello World</text>
+    </svg>
+    <br>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <br>
+    <img src="bola.jpg" alt="Figura de  uma bola" width="100" height="100">
+    
+</body>
+<script>
+    document.getElementById('meuCirculo').addEventListener('click', function() {
+        this.setAttribute('fill', 'red');
+    });
+    // Crie um gráfico SVG que mude de cor ao passar o mouse.
+    document.getElementById('meuCirculo').addEventListener('mouseover', function() {
+        this.setAttribute('fill', 'black');
+    });
+</script>
+</html>
