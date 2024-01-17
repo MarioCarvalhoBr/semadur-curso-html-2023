@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Países</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informações sobre Países</h1>
+    <input type="text" id="countryName" placeholder="Digite o nome de um país">
+    <button onclick="fetchCountryInfo()">Buscar</button>
+
+    <div id="info"></div>
+
+    <script>
+        function fetchCountryInfo() {
+            var countryName = document.getElementById('countryName').value;
+            var apiUrl = 'https://restcountries.com/v3.1/name/' + countryName;
+        
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => displayCountryInfo(data[0]))
+                .catch(err => console.error('Erro ao buscar informações do país:', err));
+        }
+        
+        function displayCountryInfo(country) {
+            var infoDiv = document.getElementById('info');
+            infoDiv.innerHTML = `
+                <h2>${country.name.common} (${country.cca2})</h2>
+                <p>Capital: ${country.capital}</p>
+                <p>População: ${country.population.toLocaleString()}</p>
+                <p>Região: ${country.region}</p>
+                <p>Subregião: ${country.subregion}</p>
+                <img src="${country.flags.png}" alt="Bandeira de ${country.name.common}" style="width: 100px;">
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de LocalStorage Tarefas</title>
+        <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            background-color: rgb(33, 80, 167);
+            color: white;    
+            padding: 30px;
+            text-align: center;  
+        }
+        
+        .conteudo{
+            flex: 1 0 auto; 
+            margin-top: 10px;  
+            margin-bottom: 20px; 
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .rodape{
+            background-color: rgb(33, 80, 167);
+            color: white; 
+            flex-shrink: 0;
+        }
+        h2{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: rgb(33, 80, 167);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(33, 80, 167);
+        }
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(33, 80, 167);
+            border-radius: 4px;
+            background-color: white;
+            resize: none;
+        }
+
+        li{
+            background-color: rgb(33, 80, 167);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            <h1>Minhas Tarefas</h1>
+        </header>
+
+        <main>
+            <section class="conteudo">
+                <article>
+                    <!--
+                         Lista de tarefas
+                            Input para digitar a tarefa
+                            Botão para adicionar a tarefa
+                            Lista de tarefas
+                                Tarefa
+                                Botão para remover a tarefa
+                            
+                            Armazenar as tarefas no LocalStorage
+                            Recuperar as tarefas do LocalStorage
+                        -->
+
+                    <br>
+
+                    <h2>Lista de Tarefas</h2>
+                    <div id="lista_tarefas"></div>
+                    <div>
+                        <textarea id="tarefa" rows="4" cols="50"></textarea>
+                        <br>
+                        <button id="adicionar">Adicionar</button>
+                    </div>
+ 
+                </article>
+                <hr>
+
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Desenvolvido por: Mário Carvalho</p>
+        </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de Drag and Drop TODO</title>
+        <style>
+        /*Configurar um menu azul e branco para o menu lista na horizontal (nav)*/
+        nav ul {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            text-align: center;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            background-color: rgb(33, 80, 167);
+            color: white;    
+            padding: 30px;
+            text-align: center;  
+        }
+        
+        .conteudo{
+            flex: 1 0 auto; 
+            margin-top: 10px;  
+            margin-bottom: 20px; 
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .rodape{
+            background-color: rgb(33, 80, 167);
+            color: white; 
+            flex-shrink: 0;
+        }
+        h2{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: rgb(33, 80, 167);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(33, 80, 167);
+        }
+    </style>
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            <h1>Minhas Tarefas</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Tarefas</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="conteudo">
+                <article>
+                    <table>
+                        <tr>
+                            <th>
+                                <h2 style="text-align: center;">A FAZER:</h2>
+                            </th>
+                            <th>
+                                <h2 style="text-align: center;">FAZENDO:</h2>
+                            </th>
+                            <th>
+                                <h2 style="text-align: center;">FEITO:</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="dropZone1" ondrop="drop(event)"
+                                    ondragover="allowDrop(event)"
+                                    style="width: 400px; height: 600px; border: 5px solid black;">
+                                    <h2 id="drag1" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        HTML</h2>
+                                    <h2 id="drag2" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        CSS</h2>
+                                    <h2 id="drag3" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        JavaScript</h2>
+                                    <h2 id="drag4" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        PHP</h2>
+                                    <h2 id="drag5" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        Python</h2>
+                                    <h2 id="drag6" draggable="true" style="border: 3px solid black;margin: 10px;"
+                                        ondragstart="drag(event)">Estudar
+                                        Java</h2>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div id="dropZone2" ondrop="drop(event)"
+                                    ondragover="allowDrop(event)"
+                                    style="width: 400px; height: 600px; border: 5px solid black;"></div>
+                            </td>
+                            <td>
+                                <div id="dropZone2" ondrop="drop(event)"
+                                    ondragover="allowDrop(event)"
+                                    style="width: 400px; height: 600px; border: 5px solid black;"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+ 
+                </article>
+                <hr>
+
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Desenvolvido por: Mário Carvalho</p>
+        </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>
