@@ -1,0 +1,41 @@
+h1{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*CSS por ID (id=) da tag/elemento*/
+#autor{
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*CSS por CLASSE (class=) da tag/elemento*/
+
+.texto{
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.sobre{
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.sobre h3{
+    color: rgb(9, 65, 137);
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+body{
+    background-color: rgb(94, 213, 232);
+    border: 2px solid black;
+    color: black;
+}

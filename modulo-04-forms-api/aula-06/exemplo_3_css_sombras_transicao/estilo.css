@@ -1,0 +1,24 @@
+div {
+    box-shadow: 5px 5px 5px grey;
+}
+h1 {
+    text-shadow: 2px 2px red;
+}
+button{
+    box-shadow: 15px 15px 15px blue;
+    margin: 10px;
+    border: 10px outset #0e28bd; /*Pode ser solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    padding: 10px;
+    box-sizing: border-box;
+        
+}
+/*Hover: quando o mouse passa por cima*/
+div:hover {
+    transition: background-color 0.5s ease-in-out;
+    background-color: blue;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 10px 10px 10px yellow;
+    transition: color 0.5s ease-in-out;
+    color: white;
+
+}

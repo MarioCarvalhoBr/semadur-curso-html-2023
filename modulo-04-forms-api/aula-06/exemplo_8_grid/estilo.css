@@ -1,0 +1,20 @@
+body {
+    font-size: 2vw;
+}
+
+.conteudo1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .propaganda{
+        display: none;
+    }
+}

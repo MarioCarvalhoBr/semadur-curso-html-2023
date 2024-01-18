@@ -1,0 +1,74 @@
+:root {
+    --cor-primaria: #73ff00;
+}
+
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    article{
+        border: 2px solid black;
+        padding: 10px;
+        background-color: orange;
+        margin-top: 20px;
+    
+    }
+    h1{
+        color: var(--cor-primaria);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    article{
+        border: 2px solid black;
+        padding: 10px;
+        background-color: red;
+    
+    }
+    h1{
+        color: var(--cor-primaria);
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    article{
+        border: 2px solid black;
+        padding: 10px;
+        background-color: blue;
+    
+    }
+    h1{
+        color: var(--cor-primaria);
+    }
+}
+
+p::before {
+    content: "Nota:";
+    font-weight: bold;
+}
+
+h1::before {
+    content: "Título:";
+    font-weight: bold;
+}
+
+p::after {
+    content: "Fim da nota.";
+    font-weight: bold;
+}

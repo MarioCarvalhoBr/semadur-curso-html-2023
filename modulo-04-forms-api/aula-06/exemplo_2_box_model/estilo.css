@@ -1,0 +1,50 @@
+div {
+    margin: 10px;
+    border: 10px outset #0e28bd; /*Pode ser solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #d0d3e5, #31bd0e);
+
+}
+
+h1{
+    border: 5px dotted #0e28bd; /*Pode ser solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    margin-bottom: 50px;
+    text-align: center;
+}
+p{
+    border: 5px dotted #0e28bd; /*Pode ser solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0e28bd;
+}
+
+button{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    background-color: #0e28bd;
+    background: linear-gradient(to right, #0e28bd, #31bd0e);
+
+}
+body{
+    background-color: #31bd0e;
+}

@@ -1,0 +1,55 @@
+body{
+    margin: 140px;
+}
+
+@keyframes animacaoExemplo {
+    from {
+        background-color: red;
+        border: 2px dotted black;
+    }
+    to { background-color: yellow; }
+}
+
+@keyframes animacaoComplexa{
+    from {
+        background-color: red;
+        border: 2px dotted black;
+        transform: rotate(50deg);
+    }
+    50% {
+        background-color: yellow;
+        border: 2px solid black;
+        transform: rotate(100deg);
+    }
+    to {
+        background-color: blue;
+        border: 2px dashed black;
+        transform: rotate(150deg);
+    }
+
+}
+
+@keyframes animacaoGiratoria{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes animacaoDeExplosao{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(10);
+    }
+
+
+}
+
+div {
+    animation: animacaoDeExplosao 4s infinite;
+}
