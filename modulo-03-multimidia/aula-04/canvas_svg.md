@@ -82,9 +82,7 @@ ctx.fillRect(10, 10, 50, 50); // Desenha um retângulo vermelho
 
 ---
 
-# Slide 6: Estil
-
-izando SVG
+# Slide 6: Estilizando SVG
 
 ## Personalização com CSS e Atributos
 
